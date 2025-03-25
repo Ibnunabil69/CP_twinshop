@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twinsshop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/styles.css">
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body class="bg-[#FFFDF1]">
+
+    <nav class="fixed top-0 inset-x-0 z-50 bg-[#FFFDF1] border-b border-[#45474B] px-4 md:px-8 lg:px-32">
+      <div class="container mx-auto flex items-center justify-between py-3">
+        <!-- Logo -->
+        <a id="logo_toko" class="w-14"><img src="img/Logo_Toko.svg" /></a>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 font-libre font-normal">
+          <a class="nav-link nav-link-active text-[#45474B] hover:text-[#379777] text-sm" href="#home">Beranda</a>
+          <a class="nav-link text-[#45474B] hover:text-[#379777] text-sm" href="#about">Tentang</a>
+          <a class="nav-link text-[#45474B] hover:text-[#379777] text-sm" href="#product">Produk</a>
+          <a class="nav-link text-[#45474B] hover:text-[#379777] text-sm" href="#gallery">Galeri</a>
+          <a class="nav-link text-[#45474B] hover:text-[#379777] text-sm" href="#contact">Kontak</a>
+        </div>
+        
+        <!-- Shop Now Button (Tablet & Desktop) -->
+        <a href="#product" class="hidden sm:flex items-center space-x-2 text-[#379777] border border-[#379777] hover:bg-[#379777] hover:text-[#FFFDF1] py-2 px-3 rounded-3xl font-medium transition-all duration-300 ease-in-out">
+          <i class="bx bx-shopping-bag text-md"></i>
+          <span class="font-montserrat text-sm">Shop Now</span>
+        </a>
+        
+        <!-- Hamburger Icon (Mobile & Tablet) -->
+        <i class="hamburger md:hidden bx bx-menu text-4xl text-[#45474B] cursor-pointer"></i>
+      </div>
+      
+      <!-- Mobile & Tablet Menu -->
+      <div class="md:hidden">
+        <div class="menu absolute top-16 container hidden flex-col bg-[#FFFDF1] border-b border-[#379777] inset-x-0 mx-auto px-6 py-6 text-center gap-4 font-libre">
+          <a class="text-[#45474B] hover:text-[#379777] text-sm" href="#home">Beranda</a>
+          <a class="text-[#45474B] hover:text-[#379777] text-sm" href="#about">Tentang</a>
+          <a class="text-[#45474B] hover:text-[#379777] text-sm" href="#product">Produk</a>
+          <a class="text-[#45474B] hover:text-[#379777] text-sm" href="#gallery">Galeri</a>
+          <a class="text-[#45474B] hover:text-[#379777] text-sm" href="#contact">Kontak</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section id="home" class="px-4 relative pt-16 md:pt-16 min-h-screen flex justify-center items-center mb-5 md:px-12 lg:px-32">
+      <!-- Hiasan Bunga 1 (Hanya muncul di layar md ke atas) -->
+      <img src="img/dekor-daun3.svg" class="hidden md:block absolute top-10 -left-20 w-24 sm:w-64 rotate-[12deg] -z-10 opacity-10" alt="Flower Decoration">
+      <img src="img/dekor-daun3-updated.svg" class="hidden md:block absolute top-6 -left-20 w-24 sm:w-64 rotate-[12deg] -z-10" alt="Flower Decoration">
+      <img src="img/dekor-daun3.svg" class="hidden md:block absolute -bottom-28 -left-20 w-24 sm:w-64 rotate-[12deg] -z-10 opacity-10" alt="Flower Decoration">
+      <img src="img/dekor-daun3.svg" class="hidden md:block absolute -bottom-24 -left-20 w-24 sm:w-64 rotate-[12deg] -z-10" alt="Flower Decoration">
+      <img src="img/dekor-header.svg" class="hidden md:block absolute bottom-24 right-10 w-24 sm:w-32" alt="Flower Decoration">
+      
+      <div class="container mx-auto flex flex-col md:flex-row md:justify-between items-center">
+        <div class="md:w-7/12 text-center md:text-left relative z-10 py-8 md:py-0 w-10/12">
+          <p class="text-sm sm:text-base mb-3 sm:mb-5 font-montserrat italic text-gray-600">Twinsshop</p>
+          <h1 class="text-3xl sm:text-3xl md:text-4xl font-medium mb-3 sm:mb-5 font-libre text-[#379777] md:w-11/12">
+            Pilihan Terbaik untuk Kecantikan dan Gaya Anda
+          </h1>
+          <p class="text-gray-600 mb-3 sm:mb-5 md:w-11/12 font-montserrat text-xs sm:text-sm">
+            Kami menyediakan kosmetik berkualitas, serta pakaian dan aksesoris stylish. Temukan semua kebutuhan kecantikan dan fashion Anda di sini!
+          </p>
+          <a href="#about" class="bg-transparent text-[#379777] px-3 sm:px-4 py-2 rounded-3xl flex items-center justify-center gap-2 w-fit mx-auto md:mx-0 border border-[#379777] transition duration-300 hover:bg-[#379777] hover:text-white font-montserrat md:text-sm sm:text-md">
+            Selengkapnya
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>          
+        </div>
+        <img class="md:w-5/12 w-10/12 sm:w-8/12 relative z-10" src="img/Header.png" alt="Header Image" />
+      </div>
+    </section>
+    
+   <!-- Our Service -->
+    <section id="service" class="pt-12 pb-20 px-8 md:px-12 lg:px-32 bg-[#379777] relative overflow-hidden">
+      <!-- Dekorasi Daun -->
+      <img src="img/bg-daun-white.svg" 
+          class="hidden md:block absolute -bottom-8 -left-48 w-24 sm:w-4/12 rotate-[30deg] z-0 opacity-10" 
+          alt="Flower Decoration">
+      <img src="img/bg-daun-white.svg" 
+          class="hidden md:block absolute -bottom-8 -right-48 w-24 sm:w-4/12 rotate-[150deg] z-0 opacity-10 scale-y-[-1]" 
+          alt="Flower Decoration">
+
+      <!-- Kontainer Layanan -->
+      <div class="container mx-auto relative z-10">
+        <div class="text-center mb-8">
+          <h2 class="inline-block text-2xl md:text-2xl text-white font-bold border-b border-white font-libre">
+            Layanan Kami
+          </h2>
+        </div>
+
+        <!-- Grid untuk Mobile dan Desktop -->
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 font-montserrat">
+          <div class="group flex flex-col justify-between bg-white border border-white rounded-xl p-4 text-center min-h-[200px] transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <div class="flex justify-center items-center bg-[#379777] text-white w-16 h-16 rounded-full mx-auto mb-2 transition-all duration-300 group-hover:scale-110">
+              <i class="bx bx-package text-3xl"></i>
+            </div>
+            <h3 class="text-md font-semibold text-[#379777] mb-1 transition-all duration-300 group-hover:text-[#2e7d67] group-hover:font-bold">
+              Pengiriman Cepat
+            </h3>
+            <p class="text-xs text-gray-600">Kami memastikan produk sampai dengan cepat dan dalam kondisi terbaik.</p>
+          </div>
+
+          <div class="group flex flex-col justify-between bg-white border border-white rounded-xl p-4 text-center min-h-[200px] transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <div class="flex justify-center items-center bg-[#379777] text-white w-16 h-16 rounded-full mx-auto mb-2 transition-all duration-300 group-hover:scale-110">
+              <i class="bx bx-package text-4xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-[#379777] mb-1 transition-all duration-300 group-hover:text-[#2e7d67] group-hover:font-bold">
+              Pengiriman Cepat
+            </h3>
+            <p class="text-xs text-gray-600">Kami memastikan produk sampai dengan cepat dan dalam kondisi terbaik.</p>
+          </div>
+
+          <div class="group flex flex-col justify-between bg-white border border-white rounded-xl p-4 text-center min-h-[200px] transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <div class="flex justify-center items-center bg-[#379777] text-white w-16 h-16 rounded-full mx-auto mb-2 transition-all duration-300 group-hover:scale-110">
+              <i class="bx bx-package text-4xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-[#379777] mb-1 transition-all duration-300 group-hover:text-[#2e7d67] group-hover:font-bold">
+              Pengiriman Cepat
+            </h3>
+            <p class="text-xs text-gray-600">Kami memastikan produk sampai dengan cepat dan dalam kondisi terbaik.</p>
+          </div>
+          
+          <div class="group flex flex-col justify-between bg-white border border-white rounded-xl p-4 text-center min-h-[200px] transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <div class="flex justify-center items-center bg-[#379777] text-white w-16 h-16 rounded-full mx-auto mb-2 transition-all duration-300 group-hover:scale-110">
+              <i class="bx bx-package text-4xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-[#379777] mb-1 transition-all duration-300 group-hover:text-[#2e7d67] group-hover:font-bold">
+              Pengiriman Cepat
+            </h3>
+            <p class="text-xs text-gray-600">Kami memastikan produk sampai dengan cepat dan dalam kondisi terbaik.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About Section-->
+<section id="about" class="px-8 md:px-12 lg:px-32 font-montserrat relative md:py-10">
+
+  <img src="img/Bg-daun1.png" class="hidden md:block absolute -top-12 left-12 w-24 sm:w-32 opacity-60 rotate-90" alt="Flower Decoration">
+
+  <!-- Judul -->
+  <div class="text-center py-4 mb-8">
+    <h2 class="inline-block text-2xl text-center mb-8 text-[#379777] font-libre border-b border-[#45474B]">
+      Tentang Toko
+    </h2>
+  </div>
+
+  <!-- Container Konten dengan Flexbox -->
+  <div class="flex-grow flex items-start justify-center">
+    <div class="container mx-auto flex flex-col md:flex-row md:justify-between items-start md:space-y-0 md:space-x-6">
+      <!-- Gambar -->
+      <img class="md:w-4/12 w-8/12 sm:w-2/12 h-auto pb-12" src="img/img_about.png" alt="About Image" />
+      
+      <!-- Deskripsi Toko -->
+      <div class="md:w-7/12 text-center md:text-left">
+        <h3 class="text-xl font-libre text-[#379777] mb-5">Sejarah Toko</h3>
+        <p class="text-gray-700 text-xs mb-6">
+          Toko kami didirikan dengan tujuan menyediakan produk kosmetik dan aksesoris berkualitas tinggi untuk semua orang.
+          Berawal dari bisnis kecil yang hanya menjual beberapa produk, kini kami telah berkembang dengan berbagai kategori
+          produk dan pelanggan setia yang terus bertambah. Dengan dedikasi dan komitmen terhadap kepuasan pelanggan, kami 
+          terus berinovasi menghadirkan tren kecantikan terbaru.
+        </p>
+
+        <!-- Container Visi & Misi -->
+        <div class="flex flex-col md:flex-row items-start justify-center md:space-x-8">
+          <!-- Visi -->
+          <div class="md:w-6/12 text-center md:text-left">
+            <h4 class="text-xl text-[#379777] mb-3 text-center font-libre">Visi</h4>
+            <p class="text-gray-600 text-xs text-center">
+              Menjadi toko kosmetik terpercaya yang menyediakan produk kecantikan berkualitas untuk semua orang.
+            </p>
+          </div>
+
+          <!-- Garis Pemisah -->
+          <div class="hidden md:block w-[2px] h-32 bg-[#379777]"></div>
+
+          <!-- Misi -->
+          <div class="md:w-6/12 text-center md:text-left mt-6 md:mt-0">
+            <h4 class="text-xl text-[#379777] mb-3 font-libre text-center">Misi</h4>
+            <ul class="list-disc list-inside text-gray-600 text-xs">
+              <li>Menyediakan produk kecantikan terbaik dengan harga terjangkau.</li>
+              <li>Memberikan pelayanan ramah dan profesional kepada setiap pelanggan.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+  
+    
+    <!-- Product -->
+    <section id="product" class="bg-[#379777] md:px-12 lg:px-32 py-12 relative overflow-hidden">
+      <!-- Dekorasi Daun di Lapisan Bawah -->
+      <img src="img/bg-daun-white.svg" 
+           class="hidden md:block absolute -bottom-16 -right-40 w-24 sm:w-4/12 rotate-[30deg] z-0 opacity-15" 
+           alt="Flower Decoration">
+      <img src="img/bg-daun-white.svg" 
+           class="hidden md:block absolute -top-16 -left-40 w-24 sm:w-4/12 rotate-[210deg] z-0 opacity-15" 
+           alt="Flower Decoration">
+  
+      <div class="container mx-auto relative z-10">
+          <div class="text-center mb-8">
+              <h2 class="inline-block text-2xl text-center mb-4 text-white font-libre border-b border-white">
+                  Produk Kami
+              </h2>
+              <p class="text-white text-xs font-montserrat">
+                  Temukan berbagai produk terbaik kami untuk memenuhi kebutuhan kecantikan Anda.
+              </p>
+          </div>
+  
+          <!-- SEARCH & FILTER -->
+          <div class="flex flex-col md:flex-row justify-between mb-6 font-montserrat gap-3">
+              <!-- Input Search -->
+              <div class="relative w-full md:w-1/4">
+                  <input type="text" id="searchInput" placeholder="Cari produk..." 
+                      class="w-full pl-10 pr-4 py-2 border rounded-xl text-sm transition-all duration-300 focus:ring-2 focus:ring-[#379777] focus:border-[#379777] hover:border-[#379777]" oninput="filterProducts()">
+                  
+                  <!-- Icon Search -->
+                  <i class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg bx bx-search"></i>
+              </div>
+  
+              <!-- Select Filter -->
+              <div class="relative w-full md:w-1/6">
+                  <select id="categoryFilter" class="w-full px-4 py-2 border rounded-xl text-sm bg-white transition-all duration-300 focus:ring-2 focus:ring-[#379777] focus:border-[#379777] hover:border-[#379777] appearance-none " onchange="filterProducts()">
+                      <option value="all">Semua Produk</option>
+                      <option value="kosmetik">Kosmetik</option>
+                      <option value="parfum">Parfum</option>
+                      <option value="aksesoris">Aksesoris</option>
+                  </select>
+                  <!-- Icon Dropdown -->
+                  <i class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg bx bx-chevron-down pointer-events-none"></i>
+              </div>
+          </div>
+  
+          <!-- PRODUCT LIST -->
+          <div id="productContainer" class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+              <!-- Produk akan di-generate oleh JavaScript -->
+          </div>
+  
+          <!-- PAGINATION -->
+          <div class="flex justify-center items-center mt-6 space-x-2 font-montserrat">
+            <button onclick="prevPage()" id="prevBtn"
+                class="text-sm w-8 h-8 bg-none border-[1.5px] border-white text-white rounded-lg hover:bg-white hover:text-[#379777] transition duration-300">
+                <i class='bx bx-chevron-left text-xl'></i>
+            </button>
+            
+            <div class="flex space-x-1" id="paginationNumbers">
+                <!-- Page numbers will be dynamically inserted here -->
+            </div>
+            
+            <button onclick="nextPage()" id="nextBtn"
+            class="text-sm w-8 h-8 bg-none border-[1.5px] border-white text-white rounded-lg hover:bg-white hover:text-[#379777] transition duration-300">
+                <i class='bx bx-chevron-right text-xl'></i>
+            </button>
+        </div>
+      </div>
+  </section>
+
+  <!-- MODAL PRODUK -->
+  <div id="buyModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50 transition-opacity duration-300 font-montserrat">
+    <div class="bg-white p-6 rounded-2xl shadow-lg text-center w-96 transform scale-95 transition-transform duration-300">
+      <!-- Tombol Close -->
+      <button onclick="closeModalProduct()" class="absolute top-3 right-4 text-gray-400 hover:text-gray-600 text-xl">
+        <i class='bx bx-x'></i>
+      </button>
+
+      <!-- Nama Produk -->
+      <h3 class="text-xl font-bold text-[#45474B] mb-6" id="modalProductName">Product Name</h3>
+
+      <!-- Tombol Chat WhatsApp -->
+      <button onclick="location.href='https://wa.me/6281234567890'" 
+        class="flex items-center justify-center gap-2 w-full bg-green-500 text-white py-3 mb-3 rounded-lg shadow-md hover:bg-green-600 transition">
+        <i class='bx bxl-whatsapp text-lg'></i> Chat WhatsApp
+      </button>
+
+      <!-- Tombol Beli di TikTok -->
+      <button onclick="location.href='https://www.tiktok.com/@yourstore'" 
+        class="flex items-center justify-center gap-2 w-full bg-black text-white py-3 mb-3 rounded-lg shadow-md hover:bg-gray-900 transition">
+        <i class='bx bxl-tiktok text-lg'></i> Beli di TikTok
+      </button>
+
+      <!-- Tombol Lihat Lokasi -->
+      <button onclick="location.href='https://maps.google.com/?q=Toko Anda'" 
+        class="flex items-center justify-center gap-2 w-full bg-blue-500 text-white py-3 rounded-lg shadow-md hover:bg-blue-600 transition">
+        <i class='bx bx-map text-lg'></i> Lihat Lokasi
+      </button>
+    </div>
+  </div>
+
+
+  
+  
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mx-auto py-10 md:px-12 lg:px-32 min-h-screen px-8">
+      <div class="text-center mb-16">
+        <h2 class="inline-block text-2xl text-center mb-4 text-[#379777] font-libre border-b border-white">
+          Galeri Kami
+        </h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="relative group">
+              <img src="https://picsum.photos/300/300" alt="Gallery Image" class="w-full h-auto rounded-lg shadow-md">
+              <button class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity" onclick="openModalImage('https://picsum.photos/300/300')">Detail</button>
+          </div>
+          <div class="relative group">
+              <img src="https://picsum.photos/301/300" alt="Gallery Image" class="w-full h-auto rounded-lg shadow-md">
+              <button class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity" onclick="openModalImage('https://picsum.photos/301/300')">Detail</button>
+          </div>
+          <div class="relative group">
+              <img src="https://picsum.photos/302/300" alt="Gallery Image" class="w-full h-auto rounded-lg shadow-md">
+              <button class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity" onclick="openModal('https://picsum.photos/302/300')">Detail</button>
+          </div>
+          <div class="relative group">
+              <img src="https://picsum.photos/303/300" alt="Gallery Image" class="w-full h-auto rounded-lg shadow-md">
+              <button class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity" onclick="openModal('https://picsum.photos/303/300')">Detail</button>
+          </div>
+          <div class="relative group">
+              <img src="https://picsum.photos/304/300" alt="Gallery Image" class="w-full h-auto rounded-lg shadow-md">
+              <button class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity" onclick="openModal('https://picsum.photos/304/300')">Detail</button>
+          </div>
+          <div class="relative group">
+              <img src="https://picsum.photos/305/300" alt="Gallery Image" class="w-full h-auto rounded-lg shadow-md">
+              <button class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity" onclick="openModal('https://picsum.photos/305/300')">Detail</button>
+          </div>
+      </div>
+    </section>
+  
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-5 rounded-lg shadow-lg relative max-w-lg">
+            <button class="absolute top-4 right-6 text-2xl font-bold" onclick="closeModalImage()">&times;</button>
+            <img id="modalImage" src="" class="w-full h-auto rounded-lg">
+        </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-[#FFFDF1] md:px-12 lg:px-32 min-h-screen px-8">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="inline-block text-3xl mb-8 text-[#379777] font-libre border-b border-[#45474B] py-2">
+          Contact Us
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Left Side (Google Maps) -->
+          <div class="w-full h-[300px] md:h-[300px]">
+            <!-- Google Maps Embed -->
+            <iframe
+              class="w-full h-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.234567891234!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a14fc0f7dcd%3A0x8c8d08f9db0cbadf!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1675699265955!5m2!1sen!2sus"
+              width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
+          <!-- Right Side (Social Media Links) -->
+          <div class="flex flex-col items-center space-y-6">
+            <h3 class="text-xl font-libre text-[#45474B]">Follow Us</h3>
+            <p class="text-gray-500 text-center max-w-md">
+              Stay connected with us through our social media channels. Whether you need assistance or just want to stay updated with our latest products and offers, we are here to help. Don’t miss out on exclusive promotions and behind-the-scenes content!
+            </p>
+            <div class="flex space-x-4">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/6281234567890" target="_blank" class="text-[#25D366] hover:text-[#128C7E]">
+                <i class="bx bxl-whatsapp text-4xl"></i>
+              </a>
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/yourinstagram/" target="_blank" class="text-[#E4405F] hover:text-[#C13584]">
+                <i class="bx bxl-instagram text-4xl"></i>
+              </a>
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/yourfacebook" target="_blank" class="text-[#3b5998] hover:text-[#8b9dc3]">
+                <i class="bx bxl-facebook text-4xl"></i>
+              </a>
+              <!-- Twitter -->
+              <a href="https://twitter.com/yourtwitter" target="_blank" class="text-[#1DA1F2] hover:text-[#0d95e8]">
+                <i class="bx bxl-twitter text-4xl"></i>
+              </a>
+            </div>
+            <p class="text-gray-500 mt-4 max-w-md text-center">
+              Reach out to us on WhatsApp for quick support or connect with us on Instagram for the latest updates, stories, and exclusive offers. We’re also on Facebook and Twitter for even more ways to stay in touch!
+            </p>
+          </div>          
+        </div>
+      </div>
+    </section>
+        
+    <!-- Footer Section -->
+    <footer class="text-[#45474B] py-8 border-t border-[#379777]">
+      <div class="container mx-auto px-6 md:flex md:justify-between md:items-center md:px-12 lg:px-32">
+        <div class="mb-4 md:mb-0">
+          <img src="img/Logo_Toko.svg" alt="Logo" class="w-32 mb-2" />
+          <p class="text-sm">© 2025 Twinsshop. All Rights Reserved.</p>
+        </div>
+
+        <div class="flex justify-center space-x-8 mb-4 md:mb-0">
+          <ul class="space-y-2 text-sm">
+            <li><a href="#home" class="hover:text-[#379777]">Home</a></li>
+            <li><a href="#about" class="hover:text-[#379777]">About Us</a></li>
+            <li><a href="#service" class="hover:text-[#379777]">Services</a></li>
+            <li><a href="#product" class="hover:text-[#379777]">Products</a></li>
+            <li><a href="#contact" class="hover:text-[#379777]">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="flex justify-center space-x-6">
+          <!-- WhatsApp Icon -->
+          <a href="https://wa.me/6281234567890" target="_blank" class="text-[#45474B] hover:text-[#25D366]">
+            <i class="bx bxl-whatsapp text-3xl"></i>
+          </a>
+          <!-- Instagram Icon -->
+          <a href="https://www.instagram.com/yourinstagram/" target="_blank" class="text-[#45474B] hover:text-[#E4405F]">
+            <i class="bx bxl-instagram text-3xl"></i>
+          </a>
+          <!-- Facebook Icon (optional) -->
+          <a href="https://www.facebook.com/yourfacebook" target="_blank" class="text-[#45474B] hover:text-[#3b5998]">
+            <i class="bx bxl-facebook text-3xl"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+      </div>
+    </footer>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
